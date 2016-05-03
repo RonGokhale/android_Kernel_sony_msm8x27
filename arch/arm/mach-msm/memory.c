@@ -173,6 +173,7 @@ static void __init reserve_memory_for_mempools(void)
 	int memtype;
 	struct memtype_reserve *mt;
 	phys_addr_t alignment;
+	int ret;
 
 	mt = &reserve_info->memtype_reserve_table[0];
 	for (memtype = 0; memtype < MEMTYPE_MAX; memtype++, mt++) {
